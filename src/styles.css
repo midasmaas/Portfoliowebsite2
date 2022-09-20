@@ -1,0 +1,813 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: League Gothic Condensed;
+      font-weight: 400;
+      src: url(fonts/LeagueGothic-Condensed.woff) format("woff");
+    }
+    @font-face {
+      font-family: League Gothic Regular;
+      font-weight: 500;
+      src: url(fonts/LeagueGothic-Regular.woff) format("woff");
+    }
+    
+  }
+
+.test {
+  border-left: 10px solid #000000;
+  border-top: 10px solid #000000;
+  border-right: 5px solid #000000;
+  border-bottom: 5px solid #000000;
+}
+
+.kleur {
+  color: rebeccapurple;
+  background-color: rebeccapurple;
+}
+
+.button::before, .button::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/*NavbarKnop */
+
+.button {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #ffffff;
+  border: solid #000000 5px;
+  width: 140px;
+  height: 75px;
+
+
+}
+.button::before {
+  bottom: 4px;
+  height: 75px;
+  width: 15px;
+  left: -19px;
+  -webkit-transform: skewX(45deg);
+  transform: skewY(45deg);
+  background-color: #000000;
+}
+.button::after {
+  right: 4px;
+  height:15px;
+  width: 140px;
+  bottom: 70px;
+  -webkit-transform: skewX(40deg);
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #000000;
+
+}
+.button:active {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.button:active::before {
+  bottom: -4px;
+  width: 5px;
+  left: -8px;
+}
+.button:active::after {
+  right: -2px;
+  width: 140px;
+  bottom: 70px;
+  height: 5px;
+}
+
+/*ButtonNavBar einde */
+
+/*ButtonNavbar 2.0 */
+
+.button2::before, .button2::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .7s;
+  transition: all 0.7s;
+  transition-timing-function: linear;
+}
+
+.button2 {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+  background-color: #ffffff;
+  border: solid #000000 4px;
+  width: 140px;
+  height: 75px;
+  /*
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  */
+
+}
+.button2::before {
+  bottom: -1px;
+  height: 75px;
+  width: 8px;
+  left: -12px;
+  -webkit-transform: skewX(45deg);
+  transform: skewY(45deg);
+  background-color: #000000;
+}
+.button2::after {
+  right: 0px;
+  height: 7px;
+  width: 140px;
+  bottom: 70px;
+  -webkit-transform: skewX(30deg);
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #000000;
+
+}
+
+.button2:hover::before {
+  bottom: -2px;
+  width: 3px;
+  left: -7px;
+}
+.button2:hover::after {
+  right: -2px;
+  width: 139px;
+  bottom: 70px;
+  height: 4px;
+}
+
+.button2:hover {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+/*Button NavBar 2.0 einde */
+
+/*ButtonTest*/
+
+.button3 {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .7s;
+  transition: all 0.7s;
+  transition-timing-function: linear;
+}
+
+.button3 {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .7s;
+  background-color: #ffffff;
+  border: solid #000000 4px;
+  width: 140px;
+  height: 75px;
+  /*
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  */
+
+  box-shadow: -7px, -7px #000000
+}
+
+/*ButtonTest Einde */
+
+.buttonVierkant::before, .buttonVierkant::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.buttonVierkant {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #ffffff;
+  border: solid #000000 5px;
+  width: 55px;
+  height: 55px;
+
+}
+.buttonVierkant::before {
+  bottom: 4px;
+  height: 75px;
+  width: 15px;
+  left: -19px;
+  -webkit-transform: skewX(45deg);
+  transform: skewY(45deg);
+  background-color: #000000;
+}
+.buttonVierkant::after {
+  right: 4px;
+  height:15px;
+  width: 75px;
+  bottom: 70px;
+  -webkit-transform: skewX(40deg);
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #000000;
+
+}
+.buttonVierkant:active {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.buttonVierkant:active::before {
+  bottom: -4px;
+  width: 5px;
+  left: -8px;
+}
+.buttonVierkant:active::after {
+  right: -2px;
+  width: 75px;
+  bottom: 70px;
+  height: 5px;
+}
+
+
+.lijnOmLetters {
+  color: #000000;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #000000;
+}
+
+@media only screen and (max-width: 550px) {
+.lijnOmLetters{
+  -webkit-text-stroke-width: 3px;
+}
+}
+
+
+.lijnOmLijn {
+  height: 18px;
+  border: 5px solid #000000;
+  background: #ffffff;
+}
+
+.lijnOmLijnDik {
+  height: 45px;
+  border: 10px solid #000000;
+  background: #ffffff;
+}
+
+/*social buttons CSS*/
+
+.buttonSocial::before, .buttonSocial::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.buttonSocial {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #000000;
+  border: solid #ffffff 5px;
+  width: 60px;
+  height: 60px;
+
+}
+.buttonSocial::before {
+  bottom: -3px;
+  height: 60px;
+  width: 5px;
+  left: -9px;
+  -webkit-transform: skewX(45deg);
+  transform: skewY(45deg);
+  background-color: #ffffff;
+}
+.buttonSocial::after {
+  right: -2px;
+  height:5px;
+  width: 59px;
+  bottom: 55px;
+  -webkit-transform: skewX(40deg);
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #ffffff;
+
+}
+.buttonSocial:hover {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.buttonSocial:hover::before {
+  bottom: -4px;
+  width: 2px;
+  left: -7px;
+}
+.buttonSocial:hover::after {
+  right: -4px;
+  width: 59px;
+  bottom: 55px;
+  height: 2px;
+}
+
+
+/*social buttons CSS*/
+
+
+/*buttonVierkant2 CSS*/
+
+.buttonVierkant2::before, .buttonVierkant2::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.buttonVierkant2 {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #ffffff;
+  border: solid #000000 4px;
+  width: 50px;
+  height: 50px;
+
+}
+.buttonVierkant2::before {
+  bottom: -2px;
+  height: 50px;
+  width: 5px;
+  left: -9px;
+  -webkit-transform: skewX(45deg);
+  transform: skewY(45deg);
+  background-color: #000000;
+}
+.buttonVierkant2::after {
+  right: -2px;
+  height:5px;
+  width: 50px;
+  bottom: 45px;
+  -webkit-transform: skewX(40deg);
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #000000;
+
+}
+.buttonVierkant2:hover {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.buttonVierkant2:hover::before {
+  bottom: -3px;
+  width: 3px;
+  left: -7px;
+}
+.buttonVierkant2:hover::after {
+  right: -3px;
+  width: 50px;
+  bottom: 45px;
+  height: 3px;
+}
+
+/*buttonVierkant2 eind CSS*/
+
+
+/*hamburgermenu CSS*/
+
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+/*Animatie stijlen */
+
+.textAnimation {
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  position: absolute;
+  display: inline-block;
+  z-index: -1;
+  bottom: 0;
+}
+
+.hi{
+  display: inline-block;
+}
+
+/*Animatielijntje*/
+
+    /*NAVBAR*/
+.navLijn a {
+  position: relative;
+  text-decoration: none;
+}
+.navLijn a:before,
+.navLijn a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.navLijn a:before {
+  bottom: 2px;
+  display: block;
+  height: 4px;
+  width: 0%;
+  content: "";
+  background-color: #E44200;
+}
+
+
+
+.navLijn a:hover:before {
+
+  width: 100%;
+}
+
+    /*MEER-linkjes*/
+
+.animLijn > .lijn {
+  border: 1px solid white;
+  width: 0%;
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+
+}
+
+.animLijn:hover > .lijn {
+  width: 48px;
+  border: 2px solid #E44200;
+  background-color: #E44200;
+  cursor: pointer;
+}
+
+.meerlinkje:hover{
+  cursor: pointer;
+}
+
+    /*FOOTER-linkjes*/
+    .animLijnFooter a {
+      position: relative;
+      text-decoration: none;
+  }
+  .animLijnFooter a:before,
+  .animLijnFooter a:after {
+      position: absolute;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+  }
+  .animLijnFooter a:before {
+      bottom: 0;
+      display: block;
+      height: 3px;
+      width: 0%;
+      content: "";
+      background-color: #ffffff;
+  }
+  
+  
+
+  .animLijnFooter a:hover:before {
+  
+      width: 100%;
+  }
+
+  /*snapping voor animaties*/
+/*
+html {
+  scroll-snap-type: y;
+}
+
+.snap {
+  scroll-snap-align: start;
+}
+
+*/
+
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.percentage {
+  position: absolute;
+  top: 45%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+
+.kroon-img{
+  position: relative;
+}
+
+.kroon-img:after{
+  position: absolute;
+  top: -25%;
+  left: 20%;
+
+  background-image: url('imgs/Kroontje-18.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 100px; 
+    height: 60px;
+    content:"";
+}
+
+
+@media only screen and (max-width: 630px) {
+
+.kroon-img:after{
+  position: absolute;
+  top: -45%;
+  left: 20%;
+
+  background-image: url('imgs/Kroontje-18.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 100px; 
+    height: 60px;
+    content:"";
+}
+
+}
+
+.spotifybalon {
+}
+
+.spotifybalonText {
+    visibility: hidden;
+    width: 412px;
+    background-image: url('imgs/tekstbalon2.1-27-27.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 208px;
+    /* Position the tooltip */
+    position: absolute;
+    top: 10rem;
+    left: 25%;
+}
+
+
+
+.spotifybalon:hover .spotifybalonText {
+    visibility: visible;
+}
+
+.tooltip {
+  text-decoration:none;
+  position:relative;
+}
+.tooltip span {
+  display:none;
+}
+.tooltip:hover span {
+  display:block;
+  position:fixed;
+  overflow:hidden;
+}
+
+
+/* ============large button============*/
+.scene {
+  width: 140px;
+  height: 75px;
+  perspective: 600px;
+  perspective-origin: -60% -66%;
+  transition: all .3s;
+  transition-timing-function:ease-out;
+}
+
+.cube {
+  width: 140px;
+  height: 75px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+  transition: transform 1s;
+}
+
+.scene:hover {
+  perspective: 10000px;
+  cursor: pointer;
+}
+
+.cube__face {
+position: absolute;
+width: 140px;
+height: 75px;
+border: 2px solid black;
+color: white;
+}
+
+.cube__face__left, .cube__face_right {
+  width: 75px;
+}
+
+.cube__face--front  { 
+  background: #ffffff; 
+  color: #000000; 
+  border: solid 5px #000000;
+  transform: rotateY(  0deg) translateZ(37.5px);
+}
+.cube__face--right  { 
+  background: #000000; 
+  transform: rotateY( 90deg) translateZ(103px);
+  width: 75px;
+}
+.cube__face--back   { 
+  background: #000000; 
+  transform: rotateY(180deg) translateZ(37.5px);
+}
+.cube__face--left   { 
+  background: #000000; 
+  transform: rotateY(-90deg) translateZ(35px);
+  width: 75px;
+}
+.cube__face--top    { 
+  background: #000000; 
+  transform: rotateX( 90deg) translateZ(37.5px);
+}
+.cube__face--bottom { 
+  background:#000000; 
+  transform: rotateX(-90deg) translateZ(37.5px);
+}
+
+label { margin-right: 10px; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+/* ============large button end========*/
+
+/* ============small button ===========*/
+.scene_small {
+  width: 60px;
+  height: 60px;
+  perspective: 600px;
+  perspective-origin: -80% -86%;
+  transition: all .3s;
+  transition-timing-function:ease-out;
+}
+
+.cube_small {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+  transition: transform 1s;
+}
+
+.scene_small:hover {
+  perspective: 10000px;
+}
+
+.cube__face_small {
+position: absolute;
+width: 60px;
+height: 60px;
+border: 2px solid black;
+color: white;
+}
+
+.cube__face__left_smal, .cube__face_right_small {
+  width: 50px;
+}
+
+.cube__face--front--small  { 
+  background: #ffffff; 
+  color: #000000; 
+  border: solid 5px #000000;
+  transform: rotateY(  0deg) translateZ(30px);
+}
+.cube__face--right--small  { 
+  background: #000000; 
+  transform: rotateY( 90deg) translateZ(25px);
+  width: 60px;
+}
+.cube__face--back--small   { 
+  background: #000000; 
+  transform: rotateY(180deg) translateZ(30px);
+}
+.cube__face--left--small   { 
+  background: #000000; 
+  transform: rotateY(-90deg) translateZ(30px);
+  width: 60px;
+}
+.cube__face--top--small    { 
+  background: #000000; 
+  transform: rotateX( 90deg) translateZ(30px);
+}
+.cube__face--bottom--small { 
+  background: #000000; 
+  transform: rotateX(-90deg) translateZ(30px);
+}
+
+label { margin-right: 10px; }
+
+
+/* ============small button eind =======*/
+
+/* ============small button wit begin ===========*/
+.scene_small_wit {
+  width: 50px;
+  height: 50px;
+  perspective: 600px;
+  perspective-origin: -80% -86%;
+  transition: all .3s;
+  transition-timing-function:ease-out;
+}
+
+.cube_small_wit {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+  transition: transform 1s;
+}
+
+.scene_small_wit:hover {
+  perspective: 10000px;
+}
+
+.cube__face_small_wit {
+position: absolute;
+width: 60px;
+height: 60px;
+border: 2px solid #ffffff;
+color:#000000;
+}
+
+.cube__face__left_smal_wit, .cube__face_right_small_wit {
+  width: 50px;
+}
+
+.cube__face--front--small_wit  { 
+  background: #000000; 
+  color: #000000; 
+  border: solid 5px #ffffff;
+  transform: rotateY(  0deg) translateZ(30px);
+}
+.cube__face--right--small_wit  { 
+  background: #ffffff; 
+  transform: rotateY( 90deg) translateZ(25px);
+  width: 60px;
+}
+.cube__face--back--small_wit   { 
+  background: #ffffff; 
+  transform: rotateY(180deg) translateZ(30px);
+}
+.cube__face--left--small_wit   { 
+  background: #ffffff; 
+  transform: rotateY(-90deg) translateZ(30px);
+  width: 60px;
+}
+.cube__face--top--small_wit    { 
+  background: #ffffff; 
+  transform: rotateX( 90deg) translateZ(30px);
+}
+.cube__face--bottom--small_wit { 
+  background: #ffffff; 
+  transform: rotateX(-90deg) translateZ(30px);
+}
+
+label { margin-right: 10px; }
+
+
+/* ============small button wit end =======*/
+
+.imgTest{
+  width: 100%;
+  height: fit-content;
+}
